@@ -1,5 +1,5 @@
 from distutils.core import setup, Extension
 
-extension_mod = Extension("_no_args", ["_swig_module.cpp", "..\\swig3\\no_args.cpp"])
+extension_mod = Extension("_swig_test", ["_swig_module.cpp", "..\\swig\\no_args.cpp", "..\\swig\\fit_predict.cpp"])
 
-setup(name = "_no_args", ext_modules=([extension_mod]))
+setup(name = "_swig_test", ext_modules=([extension_mod]))

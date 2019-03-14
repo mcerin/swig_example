@@ -3008,8 +3008,8 @@ SWIG_Python_NonDynamicSetAttr(PyObject *obj, PyObject *name, PyObject *value) {
 
 #define SWIGTYPE_p_allocator_type swig_types[0]
 #define SWIGTYPE_p_char swig_types[1]
-#define SWIGTYPE_p_difference_type swig_types[2]
-#define SWIGTYPE_p_int swig_types[3]
+#define SWIGTYPE_p_class_ swig_types[2]
+#define SWIGTYPE_p_difference_type swig_types[3]
 #define SWIGTYPE_p_p_PyObject swig_types[4]
 #define SWIGTYPE_p_size_type swig_types[5]
 #define SWIGTYPE_p_std__allocatorT_double_t swig_types[6]
@@ -3033,16 +3033,16 @@ static swig_module_info swig_module = {swig_types, 13, 0, 0, 0, 0};
 #endif
 
 /*-----------------------------------------------
-              @(target):= _no_args.so
+              @(target):= _swig_test.so
   ------------------------------------------------*/
 #if PY_VERSION_HEX >= 0x03000000
-#  define SWIG_init    PyInit__no_args
+#  define SWIG_init    PyInit__swig_test
 
 #else
-#  define SWIG_init    init_no_args
+#  define SWIG_init    init_swig_test
 
 #endif
-#define SWIG_name    "_no_args"
+#define SWIG_name    "_swig_test"
 
 #define SWIGVERSION 0x030012 
 #define SWIG_VERSION SWIGVERSION
@@ -3126,7 +3126,8 @@ namespace swig {
 
 
 #define SWIG_FILE_WITH_INIT
-#include "../swig3/no_args.h"
+#include "../swig/no_args.h"
+#include "../swig/fit_predict.h"
 
 
 #include <typeinfo>
@@ -10055,46 +10056,24 @@ fail:
 }
 
 
-SWIGINTERN PyObject *_wrap_arr(PyObject *SWIGUNUSEDPARM(self), PyObject *args) {
-  PyObject *resultobj = 0;
-  int *arg1 ;
-  void *argp1 = 0 ;
-  int res1 = 0 ;
-  PyObject * obj0 = 0 ;
-  int *result = 0 ;
-  
-  if (!PyArg_ParseTuple(args,(char *)"O:arr",&obj0)) SWIG_fail;
-  res1 = SWIG_ConvertPtr(obj0, &argp1,SWIGTYPE_p_int, 0 |  0 );
-  if (!SWIG_IsOK(res1)) {
-    SWIG_exception_fail(SWIG_ArgError(res1), "in method '" "arr" "', argument " "1"" of type '" "int []""'"); 
-  } 
-  arg1 = reinterpret_cast< int * >(argp1);
-  result = (int *)arr(arg1);
-  resultobj = SWIG_NewPointerObj(SWIG_as_voidptr(result), SWIGTYPE_p_int, 0 |  0 );
-  return resultobj;
-fail:
-  return NULL;
-}
-
-
 SWIGINTERN PyObject *_wrap_vect(PyObject *SWIGUNUSEDPARM(self), PyObject *args) {
   PyObject *resultobj = 0;
-  std::vector< int,std::allocator< int > > arg1 ;
+  std::vector< double,std::allocator< double > > arg1 ;
   PyObject * obj0 = 0 ;
-  std::vector< int,std::allocator< int > > result;
+  std::vector< double,std::allocator< double > > result;
   
   if (!PyArg_ParseTuple(args,(char *)"O:vect",&obj0)) SWIG_fail;
   {
-    std::vector< int,std::allocator< int > > *ptr = (std::vector< int,std::allocator< int > > *)0;
+    std::vector< double,std::allocator< double > > *ptr = (std::vector< double,std::allocator< double > > *)0;
     int res = swig::asptr(obj0, &ptr);
     if (!SWIG_IsOK(res) || !ptr) {
-      SWIG_exception_fail(SWIG_ArgError((ptr ? res : SWIG_TypeError)), "in method '" "vect" "', argument " "1"" of type '" "std::vector< int,std::allocator< int > >""'"); 
+      SWIG_exception_fail(SWIG_ArgError((ptr ? res : SWIG_TypeError)), "in method '" "vect" "', argument " "1"" of type '" "std::vector< double,std::allocator< double > >""'"); 
     }
     arg1 = *ptr;
     if (SWIG_IsNewObj(res)) delete ptr;
   }
   result = vect(arg1);
-  resultobj = swig::from(static_cast< std::vector< int,std::allocator< int > > >(result));
+  resultobj = swig::from(static_cast< std::vector< double,std::allocator< double > > >(result));
   return resultobj;
 fail:
   return NULL;
@@ -10146,6 +10125,124 @@ fail:
   return NULL;
 }
 
+
+SWIGINTERN PyObject *_wrap_class__func1(PyObject *SWIGUNUSEDPARM(self), PyObject *args) {
+  PyObject *resultobj = 0;
+  class_ *arg1 = (class_ *) 0 ;
+  std::vector< double,std::allocator< double > > arg2 ;
+  std::vector< double,std::allocator< double > > arg3 ;
+  void *argp1 = 0 ;
+  int res1 = 0 ;
+  PyObject * obj0 = 0 ;
+  PyObject * obj1 = 0 ;
+  PyObject * obj2 = 0 ;
+  std::vector< double,std::allocator< double > > result;
+  
+  if (!PyArg_ParseTuple(args,(char *)"OOO:class__func1",&obj0,&obj1,&obj2)) SWIG_fail;
+  res1 = SWIG_ConvertPtr(obj0, &argp1,SWIGTYPE_p_class_, 0 |  0 );
+  if (!SWIG_IsOK(res1)) {
+    SWIG_exception_fail(SWIG_ArgError(res1), "in method '" "class__func1" "', argument " "1"" of type '" "class_ *""'"); 
+  }
+  arg1 = reinterpret_cast< class_ * >(argp1);
+  {
+    std::vector< double,std::allocator< double > > *ptr = (std::vector< double,std::allocator< double > > *)0;
+    int res = swig::asptr(obj1, &ptr);
+    if (!SWIG_IsOK(res) || !ptr) {
+      SWIG_exception_fail(SWIG_ArgError((ptr ? res : SWIG_TypeError)), "in method '" "class__func1" "', argument " "2"" of type '" "std::vector< double,std::allocator< double > >""'"); 
+    }
+    arg2 = *ptr;
+    if (SWIG_IsNewObj(res)) delete ptr;
+  }
+  {
+    std::vector< double,std::allocator< double > > *ptr = (std::vector< double,std::allocator< double > > *)0;
+    int res = swig::asptr(obj2, &ptr);
+    if (!SWIG_IsOK(res) || !ptr) {
+      SWIG_exception_fail(SWIG_ArgError((ptr ? res : SWIG_TypeError)), "in method '" "class__func1" "', argument " "3"" of type '" "std::vector< double,std::allocator< double > >""'"); 
+    }
+    arg3 = *ptr;
+    if (SWIG_IsNewObj(res)) delete ptr;
+  }
+  result = (arg1)->func1(arg2,arg3);
+  resultobj = swig::from(static_cast< std::vector< double,std::allocator< double > > >(result));
+  return resultobj;
+fail:
+  return NULL;
+}
+
+
+SWIGINTERN PyObject *_wrap_class__func2(PyObject *SWIGUNUSEDPARM(self), PyObject *args) {
+  PyObject *resultobj = 0;
+  class_ *arg1 = (class_ *) 0 ;
+  std::vector< double,std::allocator< double > > arg2 ;
+  void *argp1 = 0 ;
+  int res1 = 0 ;
+  PyObject * obj0 = 0 ;
+  PyObject * obj1 = 0 ;
+  std::vector< double,std::allocator< double > > result;
+  
+  if (!PyArg_ParseTuple(args,(char *)"OO:class__func2",&obj0,&obj1)) SWIG_fail;
+  res1 = SWIG_ConvertPtr(obj0, &argp1,SWIGTYPE_p_class_, 0 |  0 );
+  if (!SWIG_IsOK(res1)) {
+    SWIG_exception_fail(SWIG_ArgError(res1), "in method '" "class__func2" "', argument " "1"" of type '" "class_ *""'"); 
+  }
+  arg1 = reinterpret_cast< class_ * >(argp1);
+  {
+    std::vector< double,std::allocator< double > > *ptr = (std::vector< double,std::allocator< double > > *)0;
+    int res = swig::asptr(obj1, &ptr);
+    if (!SWIG_IsOK(res) || !ptr) {
+      SWIG_exception_fail(SWIG_ArgError((ptr ? res : SWIG_TypeError)), "in method '" "class__func2" "', argument " "2"" of type '" "std::vector< double,std::allocator< double > >""'"); 
+    }
+    arg2 = *ptr;
+    if (SWIG_IsNewObj(res)) delete ptr;
+  }
+  result = (arg1)->func2(arg2);
+  resultobj = swig::from(static_cast< std::vector< double,std::allocator< double > > >(result));
+  return resultobj;
+fail:
+  return NULL;
+}
+
+
+SWIGINTERN PyObject *_wrap_new_class_(PyObject *SWIGUNUSEDPARM(self), PyObject *args) {
+  PyObject *resultobj = 0;
+  class_ *result = 0 ;
+  
+  if (!PyArg_ParseTuple(args,(char *)":new_class_")) SWIG_fail;
+  result = (class_ *)new class_();
+  resultobj = SWIG_NewPointerObj(SWIG_as_voidptr(result), SWIGTYPE_p_class_, SWIG_POINTER_NEW |  0 );
+  return resultobj;
+fail:
+  return NULL;
+}
+
+
+SWIGINTERN PyObject *_wrap_delete_class_(PyObject *SWIGUNUSEDPARM(self), PyObject *args) {
+  PyObject *resultobj = 0;
+  class_ *arg1 = (class_ *) 0 ;
+  void *argp1 = 0 ;
+  int res1 = 0 ;
+  PyObject * obj0 = 0 ;
+  
+  if (!PyArg_ParseTuple(args,(char *)"O:delete_class_",&obj0)) SWIG_fail;
+  res1 = SWIG_ConvertPtr(obj0, &argp1,SWIGTYPE_p_class_, SWIG_POINTER_DISOWN |  0 );
+  if (!SWIG_IsOK(res1)) {
+    SWIG_exception_fail(SWIG_ArgError(res1), "in method '" "delete_class_" "', argument " "1"" of type '" "class_ *""'"); 
+  }
+  arg1 = reinterpret_cast< class_ * >(argp1);
+  delete arg1;
+  resultobj = SWIG_Py_Void();
+  return resultobj;
+fail:
+  return NULL;
+}
+
+
+SWIGINTERN PyObject *class__swigregister(PyObject *SWIGUNUSEDPARM(self), PyObject *args) {
+  PyObject *obj;
+  if (!PyArg_ParseTuple(args,(char *)"O:swigregister", &obj)) return NULL;
+  SWIG_TypeNewClientData(SWIGTYPE_p_class_, SWIG_NewClientData(obj));
+  return SWIG_Py_Void();
+}
 
 static PyMethodDef SwigMethods[] = {
 	 { (char *)"SWIG_PyInstanceMethod_New", (PyCFunction)SWIG_PyInstanceMethod_New, METH_O, NULL},
@@ -10239,10 +10336,14 @@ static PyMethodDef SwigMethods[] = {
 	 { (char *)"num_arg", _wrap_num_arg, METH_VARARGS, NULL},
 	 { (char *)"num_argd", _wrap_num_argd, METH_VARARGS, NULL},
 	 { (char *)"numnum_arg", _wrap_numnum_arg, METH_VARARGS, NULL},
-	 { (char *)"arr", _wrap_arr, METH_VARARGS, NULL},
 	 { (char *)"vect", _wrap_vect, METH_VARARGS, NULL},
 	 { (char *)"stri", _wrap_stri, METH_VARARGS, NULL},
 	 { (char *)"loop", _wrap_loop, METH_VARARGS, NULL},
+	 { (char *)"class__func1", _wrap_class__func1, METH_VARARGS, NULL},
+	 { (char *)"class__func2", _wrap_class__func2, METH_VARARGS, NULL},
+	 { (char *)"new_class_", _wrap_new_class_, METH_VARARGS, NULL},
+	 { (char *)"delete_class_", _wrap_delete_class_, METH_VARARGS, NULL},
+	 { (char *)"class__swigregister", class__swigregister, METH_VARARGS, NULL},
 	 { NULL, NULL, 0, NULL }
 };
 
@@ -10251,8 +10352,8 @@ static PyMethodDef SwigMethods[] = {
 
 static swig_type_info _swigt__p_allocator_type = {"_p_allocator_type", "allocator_type *", 0, 0, (void*)0, 0};
 static swig_type_info _swigt__p_char = {"_p_char", "char *", 0, 0, (void*)0, 0};
+static swig_type_info _swigt__p_class_ = {"_p_class_", "class_ *", 0, 0, (void*)0, 0};
 static swig_type_info _swigt__p_difference_type = {"_p_difference_type", "difference_type *", 0, 0, (void*)0, 0};
-static swig_type_info _swigt__p_int = {"_p_int", "int *", 0, 0, (void*)0, 0};
 static swig_type_info _swigt__p_p_PyObject = {"_p_p_PyObject", "PyObject **", 0, 0, (void*)0, 0};
 static swig_type_info _swigt__p_size_type = {"_p_size_type", "size_type *", 0, 0, (void*)0, 0};
 static swig_type_info _swigt__p_std__allocatorT_double_t = {"_p_std__allocatorT_double_t", "std::vector< double >::allocator_type *|std::allocator< double > *", 0, 0, (void*)0, 0};
@@ -10266,8 +10367,8 @@ static swig_type_info _swigt__p_value_type = {"_p_value_type", "value_type *", 0
 static swig_type_info *swig_type_initial[] = {
   &_swigt__p_allocator_type,
   &_swigt__p_char,
+  &_swigt__p_class_,
   &_swigt__p_difference_type,
-  &_swigt__p_int,
   &_swigt__p_p_PyObject,
   &_swigt__p_size_type,
   &_swigt__p_std__allocatorT_double_t,
@@ -10281,8 +10382,8 @@ static swig_type_info *swig_type_initial[] = {
 
 static swig_cast_info _swigc__p_allocator_type[] = {  {&_swigt__p_allocator_type, 0, 0, 0},{0, 0, 0, 0}};
 static swig_cast_info _swigc__p_char[] = {  {&_swigt__p_char, 0, 0, 0},{0, 0, 0, 0}};
+static swig_cast_info _swigc__p_class_[] = {  {&_swigt__p_class_, 0, 0, 0},{0, 0, 0, 0}};
 static swig_cast_info _swigc__p_difference_type[] = {  {&_swigt__p_difference_type, 0, 0, 0},{0, 0, 0, 0}};
-static swig_cast_info _swigc__p_int[] = {  {&_swigt__p_int, 0, 0, 0},{0, 0, 0, 0}};
 static swig_cast_info _swigc__p_p_PyObject[] = {  {&_swigt__p_p_PyObject, 0, 0, 0},{0, 0, 0, 0}};
 static swig_cast_info _swigc__p_size_type[] = {  {&_swigt__p_size_type, 0, 0, 0},{0, 0, 0, 0}};
 static swig_cast_info _swigc__p_std__allocatorT_double_t[] = {  {&_swigt__p_std__allocatorT_double_t, 0, 0, 0},{0, 0, 0, 0}};
@@ -10296,8 +10397,8 @@ static swig_cast_info _swigc__p_value_type[] = {  {&_swigt__p_value_type, 0, 0, 
 static swig_cast_info *swig_cast_initial[] = {
   _swigc__p_allocator_type,
   _swigc__p_char,
+  _swigc__p_class_,
   _swigc__p_difference_type,
-  _swigc__p_int,
   _swigc__p_p_PyObject,
   _swigc__p_size_type,
   _swigc__p_std__allocatorT_double_t,

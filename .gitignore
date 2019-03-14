@@ -1,0 +1,10 @@
+Debug/
+__pychace__
+build/
+
+*.pyd
+./swig_code/swig_test.py
+./swig_code/_swig_module.cpp
+
+
+
