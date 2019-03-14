@@ -13,9 +13,9 @@ python test.py
 ```
 
 ## Files needed:
-c++ files that you want to wrape `\swig\swig\` (.cpp, .h)
-swig.i
-setup.py
+c++ files that you want to wrape `\swig\swig\` (.cpp, .h)__
+swig.i__
+setup.py__
 
 ## Files generated 
 ### SWIG
