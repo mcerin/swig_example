@@ -1,0 +1,10 @@
+﻿  pch.cpp
+  fit_predict.cpp
+  main.cpp
+c:\users\matej\ijs\swig_example\swig\main.cpp(19): warning C4101: 'arr4': unreferenced local variable
+  no_args.cpp
+  nump.cpp
+  Generating code
+  All 262 functions were compiled because no usable IPDB/IOBJ from previous compilation was found.
+  Finished generating code
+  swig.vcxproj -> C:\Users\Matej\ijs\swig_example\x64\Release\swig.exe

@@ -1,4 +1,4 @@
-#include "pch.h"
+//#include "pch.h"
 #include <iostream>
 #include <vector>
 #include <string>
@@ -26,6 +26,7 @@ int main()
 	st = "neki neki";
 	//cout << stri(st) << endl;
 
+	//Fit__predict fp;
 	//vec = fp.predict(vec);
 	//cout << vec[1] << endl;
 
