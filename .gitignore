@@ -2,6 +2,7 @@ Debug/
 __pychace__
 build/
 .vs/
+Release/
 
 *.pyd
 ./swig_code/swig_test.py
