@@ -3,12 +3,12 @@ Examples how to wrape c++ to Python, with SWIG an Visual Studio 2017.
 
 ## Wrapping
 ### Files needed:
-c++ files that you want to wrape (.cpp, .h)
+c++ files that you want to wrape (.cpp, .h)  
 swig.i
 
-Download SWIG (http://www.swig.org/download.html).
-Download Python (https://www.python.org/).
-Download Visual Studio (https://visualstudio.microsoft.com/)
+Download SWIG (http://www.swig.org/download.html).  
+Download Python (https://www.python.org/).  
+Download Visual Studio (https://visualstudio.microsoft.com/)  
 
 + First in Visual Studio create new c++ `Empty Project`  (project name should be the same as %module statement in `.i` with additional `_` in front).  
 + Build the "Release" version.
